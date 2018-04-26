@@ -8,14 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		04C25E5120916461000FB08D /* LBTextfield01.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C25E4F20916461000FB08D /* LBTextfield01.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04C25E5820916523000FB08D /* LBTextfield01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C25E5720916523000FB08D /* LBTextfield01.swift */; };
+		04C25E7A2091748C000FB08D /* LBTextfield01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C25E792091748C000FB08D /* LBTextfield01.swift */; };
+		BB7C57F05BB5C716CFCF370A /* Pods_LBTextfield01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114F69B0F4990F0BC327FC7 /* Pods_LBTextfield01.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04C25E4C20916461000FB08D /* LBTextfield01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LBTextfield01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C25E4F20916461000FB08D /* LBTextfield01.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBTextfield01.h; sourceTree = "<group>"; };
 		04C25E5020916461000FB08D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04C25E5720916523000FB08D /* LBTextfield01.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBTextfield01.swift; sourceTree = "<group>"; };
+		04C25E792091748C000FB08D /* LBTextfield01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBTextfield01.swift; sourceTree = "<group>"; };
+		05292952C63964D1FC5F7218 /* Pods-LBTextfield01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBTextfield01.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBTextfield01/Pods-LBTextfield01.release.xcconfig"; sourceTree = "<group>"; };
+		3114F69B0F4990F0BC327FC7 /* Pods_LBTextfield01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBTextfield01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5EEB57C641221D858C0E16B /* Pods-LBTextfield01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBTextfield01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBTextfield01/Pods-LBTextfield01.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7C57F05BB5C716CFCF370A /* Pods_LBTextfield01.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +39,8 @@
 			children = (
 				04C25E4E20916461000FB08D /* LBTextfield01 */,
 				04C25E4D20916461000FB08D /* Products */,
+				156D5B27176217722FC3F53D /* Pods */,
+				1FFD1C886F06C2029475BD7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,11 +55,28 @@
 		04C25E4E20916461000FB08D /* LBTextfield01 */ = {
 			isa = PBXGroup;
 			children = (
-				04C25E5720916523000FB08D /* LBTextfield01.swift */,
 				04C25E4F20916461000FB08D /* LBTextfield01.h */,
 				04C25E5020916461000FB08D /* Info.plist */,
+				04C25E792091748C000FB08D /* LBTextfield01.swift */,
 			);
 			path = LBTextfield01;
+			sourceTree = "<group>";
+		};
+		156D5B27176217722FC3F53D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5EEB57C641221D858C0E16B /* Pods-LBTextfield01.debug.xcconfig */,
+				05292952C63964D1FC5F7218 /* Pods-LBTextfield01.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1FFD1C886F06C2029475BD7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3114F69B0F4990F0BC327FC7 /* Pods_LBTextfield01.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04C25E5420916461000FB08D /* Build configuration list for PBXNativeTarget "LBTextfield01" */;
 			buildPhases = (
+				C68A845E7CA253FCB95E8893 /* [CP] Check Pods Manifest.lock */,
 				04C25E4720916461000FB08D /* Sources */,
 				04C25E4820916461000FB08D /* Frameworks */,
 				04C25E4920916461000FB08D /* Headers */,
@@ -129,12 +154,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C68A845E7CA253FCB95E8893 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LBTextfield01-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04C25E4720916461000FB08D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C25E5820916523000FB08D /* LBTextfield01.swift in Sources */,
+				04C25E7A2091748C000FB08D /* LBTextfield01.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +309,7 @@
 		};
 		04C25E5520916461000FB08D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5EEB57C641221D858C0E16B /* Pods-LBTextfield01.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -273,11 +320,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LBTextfield01/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LongbackDevelopment.LBTextfield01;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -289,6 +332,7 @@
 		};
 		04C25E5620916461000FB08D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05292952C63964D1FC5F7218 /* Pods-LBTextfield01.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -299,11 +343,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LBTextfield01/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LongbackDevelopment.LBTextfield01;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

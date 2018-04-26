@@ -1,13 +1,20 @@
-
 //
-//  GHTextInputView01.swift
-//  KongNaMul
+//  Service.swift
+//  LBTextfield01
 //
-//  Created by gh_macmini on 2018. 4. 23..
-//  Copyright © 2018년 Justin. All rights reserved.
+//  Created by gh_macmini on 2018. 4. 26..
+//  Copyright © 2018년 ghsoft.LBDevelopment. All rights reserved.
 //
 
 import UIKit
+
+public class LBService {
+    private init() { }
+    
+    public static func saySomething() {
+        print("haha")
+    }
+}
 
 extension UIColor {
     
@@ -34,9 +41,7 @@ extension UIColor {
     }
 }
 
-
-
-class LBTextfield01: UIView {
+public class LBTextfield01: UIView {
     
     //Variables to configure details
     public var borderWidth: CGFloat = 0.5
@@ -71,8 +76,9 @@ class LBTextfield01: UIView {
         self.isTextProvided = (sender.text?.isEmpty)! ? false : true
     }
     
-    convenience init(highlightedIconImage: UIImage, defaultIconImage: UIImage, attributedPlaceholder: NSAttributedString, inputTextAttributes: [NSAttributedStringKey: Any], keyboardType: UIKeyboardType = .default) {
+    public convenience init(highlightedIconImage: UIImage, defaultIconImage: UIImage, attributedPlaceholder: NSAttributedString, inputTextAttributes: [NSAttributedStringKey: Any], keyboardType: UIKeyboardType = .default) {
         self.init(frame: .zero)
+        
         self.highlightedIconImage = highlightedIconImage
         self.defaultIconImage = defaultIconImage
         self.iconIV.image = defaultIconImage
@@ -90,7 +96,7 @@ class LBTextfield01: UIView {
     override private init(frame: CGRect) {
         super.init(frame: frame)
         
-       
+        
     }
     
     private var iconImageWidthConstraint: NSLayoutConstraint?
@@ -113,7 +119,7 @@ class LBTextfield01: UIView {
             ])
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
@@ -133,82 +139,3 @@ extension LBTextfield01 {
     
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,16 @@
+PODS:
+  - LBTextfield01 (1.0.0)
+
+DEPENDENCIES:
+  - LBTextfield01 (from `../LBTextfield01/`)
+
+EXTERNAL SOURCES:
+  LBTextfield01:
+    :path: "../LBTextfield01/"
+
+SPEC CHECKSUMS:
+  LBTextfield01: 8f0b5da1011cc64913bb09a9b79e2c813e8421e0
+
+PODFILE CHECKSUM: afa575a1d34f10b294975fbe02f9ffc121a53d9c
+
+COCOAPODS: 1.5.0

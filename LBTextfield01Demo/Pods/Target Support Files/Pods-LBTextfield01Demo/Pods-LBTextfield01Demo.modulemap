@@ -1,0 +1,6 @@
+framework module Pods_LBTextfield01Demo {
+  umbrella header "Pods-LBTextfield01Demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

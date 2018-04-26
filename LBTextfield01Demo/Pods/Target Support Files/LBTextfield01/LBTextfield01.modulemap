@@ -1,0 +1,6 @@
+framework module LBTextfield01 {
+  umbrella header "LBTextfield01-umbrella.h"
+
+  export *
+  module * { export * }
+}
